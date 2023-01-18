@@ -1,0 +1,150 @@
+nav{
+	display: flex;
+	/* background: green; */
+	height: 70px;
+	justify-content: space-between;
+	width: 100%;
+}
+#logo{
+	display: flex;
+	width: 20%;
+	font-size: 20px;
+}
+#logo-img{
+	margin-top: 20px;
+	
+}#job{
+	height: 50px;
+	width: 100px;
+	background: yellow;
+}
+
+
+#option{
+	width: 60%;
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
+	align-items: center;
+      font-family:sans-serif;
+	text-align: center;
+	color: rgb(66, 62, 62);
+	
+	
+}
+#option a{
+	text-decoration: none;
+	color: black;
+}
+#para{
+	width: 60%;
+	margin: auto;
+	font-size: 30px;
+	text-align: right;
+	color: rgb(129, 123, 123);
+	font-family: "Open Sans", sans-serif;
+}
+#second-img{
+	margin-left: 300px;
+	width: 90%;
+	/* align-items: right; */
+	margin-top: 80px;
+
+}
+#second-img h1{
+	margin-top: -10px;
+	background: yellow;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding-left: 20px;
+}
+#distributionJ0b{
+	width: 90%;
+	margin-top: 80px;
+
+}
+#distributionJ0b h1{
+	margin-top: -10px;
+	background: yellow;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding-left: 20px;
+}
+#fleet{
+	margin-left: 300px;
+	width: 90%;
+	/* align-items: right; */
+	margin-top: 80px;
+}
+#fleet h1{
+	margin-top: -10px;
+	background: yellow;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding-left: 20px;
+}
+#corporate-job{
+	width: 90%;
+	margin-top: 80px;
+}
+#corporate-job h1{
+	margin-top: -10px;
+	background: yellow;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding-left: 20px;
+}
+#hiring{
+	display: flex;
+	width: 50%;
+	margin: auto;
+	gap: 10px;
+}
+#hiring div{
+	padding-left: 20px;
+	width: 46%;
+	font-size: 20px;
+	color: rgb(124, 121, 121);
+	font-family: "Open Sans", sans-serif;
+	background: yellow;
+	border:2px solid red;
+}
+#hiring h3{
+	color: rgb(238, 160, 160);
+	font-family: "Open Sans", sans-serif;
+}
+footer{
+	background-color: rgb(48, 47, 47);
+	height: 600px;
+	/* display: flex; */
+	font-size: 20px;
+	color: aliceblue;
+	margin-top: 70px;
+}
+.lastcont{
+	display: flex;
+	width:70%;
+	margin:auto;
+	padding-top: 60px;
+	/* text-align: center; */
+	/* align-items: center; */
+	/* align-content: center; */
+}
+#fot_part{
+	display: flex;
+	width: 50%;
+	margin: auto;
+	border: 2px solid red;
+}
+#fot_part >div{
+	width: 50%;
+	/* margin-left: 150px; */
+}
