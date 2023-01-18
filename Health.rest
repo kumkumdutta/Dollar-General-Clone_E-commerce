@@ -1,0 +1,255 @@
+[
+ {
+ "id": 1,
+ "img": "https://www.dollargeneral.com/c/health/_jcr_content/root/responsivegrid/smartcarousel_categories/image_1.coreimg.100.300.png/1673883617365/health-vitamins.png",
+ "title": "",
+ "category":"Vitamins",
+ "reviews": "90 Reviews",
+ "rupees": "₹100",
+ "description": "10 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 2,
+ "img": "https://dggo.dollargeneral.com/images/21/11/21113001_0.jpg",
+ "title": "Vitavalue Probiotic Tablets, 30 Count",
+ "category":"Vitamins",
+ "reviews": "7 Reviews",
+ "rupees": "₹300",
+ "description": "Out of stock at your stock",
+ "avail": "Exclusively available in store"
+ }, 
+ {
+ "id": 3,
+ "img": "https://dggo.dollargeneral.com/images/17/73/17735501_0.jpg",
+ "title": "Rexall Glucosamine Chondroitin With Msm Caplets, 60 Count",
+ "category":"Vitamins",
+ "reviews": "3 Reviews",
+ "rupees": "₹800",
+ "description": "Out of stock at your stock",
+ "avail": "Exclusively available in store"
+ }, 
+ {
+ "id": 4,
+ "img": "https://dggo.dollargeneral.com/images/21/11/21112601_0.jpg",
+ "title": "Vitavalue Energy Tablets, 30 Count",
+ "category":"Vitamins",
+ "reviews": "90 Reviews",
+ "rupees": "₹400",
+ "description": "10 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 5,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00627302_0.jpg",
+ "title": "Rexall Odorless Garlic Cardiovascular Health Tablets 500 Mg, 60 Ct.",
+ "category":"Vitamins",
+ "reviews": "2 Reviews",
+ "rupees": "₹240",
+ "description": "10 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 6,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00627001_0.jpg",
+ "title": "Rexall L-Lysine Collagen And Tissue Maintenance 500 Mg Supplements, 60 Ct.",
+ "category":"Vitamins",
+ "reviews": "47 Reviews",
+ "rupees": "₹250",
+ "description": "25 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 7,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00626901_0.jpg",
+ "title": "Rexall L-Arginine 500 Mg Heart & Circulatory Health Supplements, 45 Ct.",
+ "category":"Vitamins",
+ "reviews": "No Reviews",
+ "rupees": "₹195",
+ "description": "17 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 8,
+ "img": "https://dggo.dollargeneral.com/images/17/73/17736101_0.jpg",
+ "title": "Rexall Melatonin Quick Dissolve 10 Mg, 30 Ct.",
+ "category":"Vitamins",
+ "reviews": "125 Reviews",
+ "rupees": "₹20",
+ "description": "Out of stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 9,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00626401_0.jpg",
+ "title": "Rexall Fish Oil 1200 Mg Softgels, 90 Ct.",
+ "category":"Vitamins",
+ "reviews": "95 Reviews",
+ "rupees": "₹160",
+ "description": "78 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 10,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00624701_0.jpg",
+ "title": "Rexall Magnesium 500 Mg Tablets, 30 Ct.",
+ "category":"Vitamins",
+ "reviews": "52 Reviews",
+ "rupees": "₹420",
+ "description": "40 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 11,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00626001_0.jpg",
+ "title": "Rexall Echinacea 400 Mg - Capsules- 60 Ct",
+ "category":"Vitamins",
+ "reviews": "40 Reviews",
+ "rupees": "₹680",
+ "description": "27 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 12,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00627101_0.jpg",
+ "title": "Rexall Melatonin 3 Mg Tablets, 60 Ct",
+ "category":"Vitamins",
+ "reviews": "80 Reviews",
+ "rupees": "₹150",
+ "description": "15 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 13,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00627101_0.jpg",
+ "title": "Rexall Sublingual B-12 5000 Mcg Tablets, 60 Ct.",
+ "category":"Vitamins",
+ "reviews": "90 Reviews",
+ "rupees": "₹399",
+ "description": "46 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 14,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00624901_0.jpg",
+ "title": "Rexall Biotin 1000 Mcg - Tablets- 60 Ct",
+ "category":"Vitamins",
+ "reviews": "30 Reviews",
+ "rupees": "₹340",
+ "description": "48 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 15,
+ "img": "https://dggo.dollargeneral.com/images/21/11/21113001_0.jpg",
+ "title": "exall Calcium Plus Vitamin D Softgels - 60 Ct",
+ "category":"Vitamins",
+ "reviews": "No Reviews",
+ "rupees": "₹569",
+ "description": "45 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 16,
+ "img": "https://dggo.dollargeneral.com/images/21/11/21113001_0.jpg",
+ "title": "Rexall Ferrous Sulfate Iron 28 Mg - Tablets- 60 Ct",
+ "category":"Vitamins",
+ "reviews": "88 Reviews",
+ "rupees": "₹287",
+ "description": "122 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 17,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00625901_0.jpg",
+ "title": "Rexall Black Cohosh 540 Mg - Capsules- 50 C",
+ "category":"Vitamins",
+ "reviews": "68 Reviews",
+ "rupees": "₹189",
+ "description": "97 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 18,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00624002_0.jpg",
+ "title": "Rexall B-Complex With Vitamin C Tablets, 60 Ct",
+ "category":"Vitamins",
+ "reviews": "40 Reviews",
+ "rupees": "₹299",
+ "description": "28 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 19,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00623201_0.jpg",
+ "title": "Rexall Cranberry Fruit Plus Vitamin C Softgels, 60 Ct.",
+ "category":"Vitamins",
+ "reviews": "187 Reviews",
+ "rupees": "₹178",
+ "description": "105 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 20,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00623401_0.jpg",
+ "title": "Azo Cranberry Urinary Tract Health Caplets - 20ct",
+ "category":"Vitamins",
+ "reviews": "112 Reviews",
+ "rupees": "₹459",
+ "description": "56 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 21,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00628801_0.jpg",
+ "title": "Rexall Vitamin C 500 Mg - Orange Chewable Tablets- 100",
+ "category":"Vitamins",
+ "reviews": "50 Reviews",
+ "rupees": "₹125",
+ "description": "100 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 22,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00622601_0.jpg",
+ "title": "Rexall Calcium Plus Vitamin D Softgels - 60 Ct",
+ "category":"Vitamins",
+ "reviews": "16 Reviews",
+ "rupees": "₹199",
+ "description": "12 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 23,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00623401_0.jpg",
+ "title": "Rexall Calcium Plus Vitamin D Softgels - 60 Ct",
+ "category":"Vitamins",
+ "reviews": "10 Reviews",
+ "rupees": "₹400",
+ "description": "20 in stock at your store",
+ "avail": "Exclusively available in store"
+ },
+  {
+ "id": 24,
+ "img": "https://dggo.dollargeneral.com/images/00/62/00628801_0.jpg",
+ "title": "Rexall Vitamin C 1000 Mg Tablets, 60 Ct.",
+ "category":"Vitamins",
+ "reviews": "11 Reviews",
+ "rupees": "₹200",
+ "description": "10 in stock at your store",
+ "avail": "Exclusively available in store"
+ }
+]
+
+
+
+# {
+#     "id": 100,
+#     "img": "",
+#     "title": "",
+#     "category":"",
+#     "reviews": "90 Reviews",
+#     "rupees": "₹180",
+#     "description": "10 in stock at your store",
+#     "avail": "Exclusively available in store"
+#     },
