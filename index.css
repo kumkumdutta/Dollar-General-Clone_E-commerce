@@ -5,6 +5,7 @@
 }
 #nav1{
     position: sticky;
+    z-index: 1;
     top: 0;
 
 }
@@ -22,6 +23,8 @@
 #nav1 a {
     text-decoration: none;
     color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
 }
 #nav1 img{
     width: 150px;
@@ -33,6 +36,16 @@
     margin: auto;
    
     
+}
+#search{
+    border-radius: none;
+    width: 500px;
+    height: 40px;
+    padding-left: 20px;
+
+}
+#searchIcon{
+    margin-left: -65px;
 }
 
 
@@ -66,5 +79,112 @@
 #cor{
     height:50%;
     margin: auto;
-    z-index: -1;
+    
 }
+#Deals{
+    display: flex;
+    margin: auto;
+    width: 65%;
+    height: 107px;
+    margin-top: 75px;
+    padding-left: 250px;
+}
+#Deals img{
+    width: 54px;
+    height: 54px;
+}
+#Deals a {
+    display: grid;
+    gap: 15px;
+    width: 240px;
+    height: 95px;
+    padding: 10px;
+    line-height: 24px;
+    margin: 6px;
+    border: 1px solid #B5AEAE;
+    -webkit-border-radius: 16px;
+    padding-left: 40px;
+    
+
+    border-radius: 16px;
+    color: #000;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    
+
+}
+#h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    /* font-weight:lighter; */
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    
+
+    margin-bottom: 80px;
+    
+}
+#middle {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    
+    gap: 20px;
+    /* align-items: flex-start; */
+    padding-left: 150px;
+    padding-right: 150px;
+    
+  }
+
+  #middle>div {
+    
+    /* //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    
+  }
+  #middle img{
+     
+      margin: auto;
+      width: 120px;
+      height:120px;
+  }
+  #val{
+    text-align: center;
+    margin-top: 55px;
+    font-size: 30px;
+    font-family: 'Explora', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+  }
+  #valImg{
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    width:70%;
+    height:346px;
+    
+  }
+  #valImg img{
+    width: 100%;
+    padding-right: 35px;
+
+  }
+ 
