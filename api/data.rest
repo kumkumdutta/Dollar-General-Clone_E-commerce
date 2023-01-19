@@ -1,5 +1,5 @@
 //food and beverage
-  GET https://mocki.io/v1/255100d7-b3b6-448c-9fa6-624443e8c484
+  GET https://mocki.io/v1/255100d7-b3b6-448c-9fa6-624443e8c484?_limit=10&_page=1
 
 
 //electronics
