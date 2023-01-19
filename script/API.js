@@ -193,3 +193,5 @@
     ]
     
 }
+
+BeautyApi("https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073")
