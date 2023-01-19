@@ -1,5 +1,5 @@
 {
-    "data":[
+    "data"=[
         {
             "id": 1,
             "img": "https://dggo.dollargeneral.com/images/22/47/22478702_0.jpg",
