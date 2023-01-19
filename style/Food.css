@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 #nav1{
+    width: 100%;
     position: sticky;
     top: 0;
+    z-index: 1;
 
 }
 #nav1>div{
+    width: 100%;
     display: flex;
     margin: auto;
     height: 70px;
@@ -38,11 +41,12 @@
         * { box-sizing: border-box; }
 
 .main-carousel{
-    width: 100%;
+    width: 80%;
     margin: auto;
     margin-bottom: 80px;
     padding: 0px 70px;
 }
+
 .carousel-cell {
     background-color: rgb(249, 244, 244);
     width: 17%;
@@ -55,7 +59,9 @@
 }
 .carousel-cell>img{
     /* background-color: grey; */
-    width: 56%;
+    width: 50%;
+    height: 60%;
+
     margin-left: 35px;
     margin-top: 10px;
 }
@@ -72,7 +78,7 @@
 #parent {
     display: flex;
     margin-top: 20px;
-    width: 100%;
+    
     justify-content: center;
 }
 #banner {
@@ -106,6 +112,9 @@
     margin-left: 30px;
     
 }
+#shopby {
+   padding-left: 450px;
+}
 
 #BFY {
      height: 100px;
@@ -119,3 +128,83 @@
     display: flex;
     align-items: center;
 }
+#abc {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 230px;
+}
+#def{
+    display: flex;
+    width: 80%;
+    
+    height:100% ;
+    justify-content: space-between;
+}
+.ghi {
+width: 20%;
+
+height: 100%;
+box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.image {
+    width: 100%;
+    height: 150px;
+}
+    
+img {
+    width: 100%;
+    height: 100%;
+}
+.ptag {
+    font-size:15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+
+#ptag {
+    width: 100%;
+    height: 40px;
+    
+}
+#button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+
+}
+ .btn {
+   margin-left: 20px;
+    border: 0px;
+    background-color: white;
+    color: blue;
+
+} 
+#container {
+    display: grid;
+            grid-template-columns:repeat(4,1fr) ;
+            
+            place-items: center;
+            padding-left: 60px;
+            padding-right: 60px;
+            row-gap: 50px;
+}
+.father {
+   width: 70%;
+    height: 390px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.imagediv {
+    width: 100%;
+    height: 200px;
+}
+.imagediv > img {
+    width: 100%;
+    height: 100%;
+}
+
