@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+.icon img{
+    margin-top: 15px;
+}
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #04b48bc0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li:hover{
+    background-color: #84f1d8;
+    transition: 0.9s;
+    border-radius: 60px;
+}
+.navigation ul li:nth-child(1){
+    margin-bottom: 20px;
+}
+.navigation ul li:nth-child(1):hover{
+    background: transparent;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a{
+    font-size: 20px;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+.main{
+    height: 60px;
+    margin-left: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+.main img{
+    width: 30px;
+    
+}
+#menu:hover{
+    padding: 3px;
+    transition: 0.7s;
+}
+.search{
+    border: 2px solid rgb(137, 134, 134);
+}
+.search img{
+    box-sizing: border-box;
+}
+input{
+    outline: none;
+    border: none;
+    width: 500px;
+    height: 17px;
+    font-size: 18px;
+    padding-left: 10px;
+    background: transparent;
+}
+section{
+    height: 60px;
+    z-index: -1;
+    background-color: #e9efed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#data{
+    display: flex;
+    /* border: 2px solid red; */
+    /* width: 600px; */
+    margin-top: 50px;
+    margin-left: 300px;
+    justify-content: space-evenly;
+}
+#data>div{
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+    background-color: rgba(250, 250, 0, 0.7);
+    border-radius: 10px;
+}
+.pic{
+    width: 50px;
+    margin-top: 6px;
+}
