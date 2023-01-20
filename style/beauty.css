@@ -30,13 +30,7 @@
     width: 150px;
     height: 140px;
 }
-.main-carousel{
-    width: 75%;
-    
-    margin: auto;
-   
-    
-}
+
 #search{
     border-radius: none;
     width: 500px;
@@ -48,96 +42,53 @@
     margin-left: -65px;
 }
 
-
-
-.carousel-cell {
-   
-  width: 100%;
-  margin: 20px;
-  height: 360px;
-  /* margin-top: 40px; */
-  /* background: #8C8; */
-  border-radius: 8px;
-  /* counter-increment: carousel-cell; */
-}
-.carousel-cell>img{
-    /* background-color: grey; */
-    width: 85%;
-    margin-left: 92px;
-    margin-top: 60px;
-}
-
-
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  /* content: counter(carousel-cell); */
-  line-height: 200px;
-  font-size: 80px;
-}
-#cor{
-    height:50%;
-    margin: auto;
-    
-}
-#Deals{
+#az{
     display: flex;
     margin: auto;
-    width: 65%;
-    height: 107px;
-    margin-top: 75px;
-    padding-left: 250px;
-}
-#Deals img{
-    width: 54px;
-    height: 54px;
-}
-#Deals a {
-    display: grid;
-    gap: 15px;
-    width: 240px;
-    height: 95px;
-    padding: 10px;
-    line-height: 24px;
-    margin: 6px;
-    border: 1px solid #B5AEAE;
-    -webkit-border-radius: 16px;
-    padding-left: 40px;
-    
-
-    border-radius: 16px;
-    color: #000;
-    font-size: 22px;
-    text-decoration: none;
-    font-weight: 600;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    justify-content: center;
-    align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Nunito', sans-serif;
-    
-
+    margin-left: 205px;
+    margin-top: 15px;
 }
-#h1{
-    text-align: center;
-    margin-top: 40px;
-    font-size: 30px;
-    /* font-weight:lighter; */
+#az a{
+    text-decoration: none;
+    color: #000;
+    
+    
+}
+#ha{
+    margin-left: 205px;
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Explora', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Nunito', sans-serif;
     font-family: 'Varela Round', sans-serif;
+}
+#hb{
+    /* margin-left: 205px; */
+    text-align: center;
+    margin-top: 40px;
+    font-size: 17px;
+    /* letter-spacing: 1px; */
+    word-spacing: 1px;
     
+    margin-bottom: 10px;
+    font-family: 'Explora', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
 
-    margin-bottom: 80px;
-    
+#bottom_img{
+    display: flex;
+    margin: auto;
+    width: 75%;
 }
 #middle {
     display: grid;
-    width: 100%;
+    width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -148,7 +99,9 @@
     padding-right: 150px;
     
   }
-
+#middle{
+    margin-top: 20px;
+}
   #middle>a {
     text-decoration: none;
     color: black;
@@ -166,84 +119,44 @@
       width: 120px;
       height:120px;
   }
-  #val{
-    text-align: center;
-    margin-top: 55px;
-    font-size: 30px;
-    margin-bottom: 30px;
-    font-family: 'Explora', cursive;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Varela Round', sans-serif;
-  }
-  #valImg{
-    display: flex;
-    margin: auto;
-    margin-top: 30px;
-    width:70%;
-    height:346px;
+
+  #filter{
+    padding: 20px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
-  }
-  #valImg>a{
-    display: flex;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-  }
-  #valImg img{
-    width: 100%;
-    padding-right: 35px;
+    width: 30%;
+    margin-left: 500px;
+    margin-top: 20px;
 
+  
   }
-  #banner{
-    display: flex;
-    margin: auto;
-    width:75%;
-    margin-top: 30px;
+  #filter-btn{
+    display: grid;
+    justify-content: center;
   }
-  #banner img{
-    width: 100%;
-    height: 300px;
-  }
-
-  .main-carouse{
-    width: 75%;
-    margin: auto;
-    margin-bottom: 80px;
-    padding: 0px 70px;
+  #beauty-container {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
-
-.carousel-cel {
-    background-color:red;
-  width: 22%;
-  margin: 20px;
-  height: auto;
-  /* margin-top: 40px; */
-  /* background: #8C8; */
-  border-radius: 8px;
-  /* counter-increment: carousel-cell; */
-}
-.carousel-cel>img{
-    /* background-color: grey; */
-    width: 100%;
-    margin-left: 35px;
-    margin-top: 10px;
+#beauty-container>div {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
+  padding: 20px;
 }
 
+#beauty-container img {
+  width: 80%;
+  height:225px;
+}
+  
 
-/* cell number */
-.carousel-cel:before {
-  display: block;
-  text-align: center;
-  /* content: counter(carousel-cell); */
-  line-height: 200px;
-  font-size: 80px;
-}
-#chor{
-    height: 50%;
-    margin: auto;
-}
+
 #footer{
     display: flex;
     margin: auto;
