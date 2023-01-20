@@ -50,6 +50,90 @@
 
 
 
+
+/* Dropdown */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 10px;
+    background-color: inherit;
+    /* font: inherit; Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(255, 255, 0);
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    width: 40%;
+    border-radius: 10px;
+    left: 80;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    margin-bottom: 20px;
+  }
+  
+  /* Mega Menu header, if needed */
+  .dropdown-content .header {
+    background: rgb(255, 247, 0);
+    padding: 2px;
+    color: white;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding-top: 15px;
+    padding-left: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+  }
+  
+  /* Style links inside the columns */
+  .column a {
+    font-size: 17px;
+    float: none;
+    color: black;
+    padding: 1px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a background color on hover */
+  .column a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
 .carousel-cell {
    
   width: 100%;
