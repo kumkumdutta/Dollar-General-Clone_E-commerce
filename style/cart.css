@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav1{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+
+}
+#nav1>div{
+    display: flex;
+    margin: auto;
+    height: 70px;
+    align-content: center;
+    background-color: #FEF200;
+    justify-content: space-evenly;
+    font-size: 18px;
+    align-items: center;
+    padding: 7px;
+}
+#nav1 a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+#nav1 img{
+    width: 150px;
+    height: 140px;
+}
+#search{
+    border-radius: 5px;
+    width: 480px;
+    height: 40px;
+    padding-left: 20px;
+
+}
+#searchIcon{
+    margin-left: -65px;
+}
+
+
+#container,#outer{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+#container{
+    justify-content: center;
+    background-color: #ffffff;
+    border: #ffffff;
+    border-radius: 5px;
+    box-shadow:  0px 0px 18px -4px rgba(0,0,0,0.3);
+    line-height: 40px;
+    /* margin: 40px, 40px, 40px, 40px; */
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#outer{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+button{
+    background-color: yellow;
+    font-size: 16px;
+    /* font-weight: bolder; */
+    border-radius: 7px;
+    width: 200px;
+    height: 40px;
+}
+#container h2{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+#footer{
+    display: flex;
+    margin: auto;
+    background-color: #000;
+}
+
+#footer>#dx{
+    width: 20%;
+    color: white;
+    padding-top: 20px;
+    padding-left: 150px;
+    text-align: left;
+    line-height: 40px;
+    
+    
+}
+#footer h3{
+    font-size: 17px;
+    font-family: 'Explora', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+#footer p{
+    font-size: 13px;
+    font-family: 'Explora', cursive;
+    font-family: 'Handlee', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+#img{
+    display: flex;
+    margin: auto;
+    width: 150px;
+    height: 90px;
+    
+}
+#logo{
+    background-color: black;
+    padding-top: 60px;
+}
+
+
+
+#logo>a>img{
+    display: flex;
+    margin: auto;
+    width: 121px;
+    height: 40px;
+    
+}
+
+#social_media{
+    display: flex;
+    margin: auto;
+   width: 10%;
+   justify-content: space-between;
+   margin-top: 10px;
+   font-size: 20px;
+   color: #FEF200;
+   margin-top: 60px;
+}
+#inf{
+    display: flex;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    padding-left: 80px;
+    color: #FEF200;
+   margin-top: 30px;
+
+   
+}
+#Akshay{
+    display: flex;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    /* padding-left: 10px; */
+    color: #FEF200;
+   margin-top: 30px;
+   padding-bottom: 30px;
+
+   }
