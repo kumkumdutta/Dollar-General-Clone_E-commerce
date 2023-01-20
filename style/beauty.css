@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav1{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+
+}
+#nav1>div{
+    display: flex;
+    margin: auto;
+    height: 70px;
+    align-content: center;
+    background-color: #FEF200;
+    justify-content: space-evenly;
+    font-size: 18px;
+    align-items: center;
+    padding: 7px;
+}
+#nav1 a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+#nav1 img{
+    width: 150px;
+    height: 140px;
+}
+
+#search{
+    border-radius: none;
+    width: 500px;
+    height: 40px;
+    padding-left: 20px;
+
+}
+#searchIcon{
+    margin-left: -65px;
+}
+
+#az{
+    display: flex;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 205px;
+    margin-top: 15px;
+}
+#az a{
+    text-decoration: none;
+    color: #000;
+    
+    
+}
+#ha{
+    margin-left: 205px;
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Explora', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+#hb{
+    /* margin-left: 205px; */
+    text-align: center;
+    margin-top: 40px;
+    font-size: 17px;
+    /* letter-spacing: 1px; */
+    word-spacing: 1px;
+    
+    margin-bottom: 10px;
+    font-family: 'Explora', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#bottom_img{
+    display: flex;
+    margin: auto;
+    width: 75%;
+}
+#middle {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    
+    gap: 20px;
+    /* align-items: flex-start; */
+    padding-left: 150px;
+    padding-right: 150px;
+    
+  }
+#middle{
+    margin-top: 20px;
+}
+  #middle>a {
+    text-decoration: none;
+    color: black;
+    /* //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    
+  }
+  #middle img{
+     
+      margin: auto;
+      width: 120px;
+      height:120px;
+  }
+
+  #filter{
+    padding: 20px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    width: 30%;
+    margin-left: 500px;
+    margin-top: 20px;
+
+  
+  }
+  #filter-btn{
+    display: grid;
+    justify-content: center;
+  }
+  #beauty-container {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+#beauty-container>div {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#beauty-container img {
+  width: 80%;
+  height:225px;
+}
+  
+
+
+#footer{
+    display: flex;
+    margin: auto;
+    background-color: #000;
+}
+#footer>#dx{
+    width: 20%;
+    color: white;
+    padding-top: 20px;
+    padding-left: 150px;
+    text-align: left;
+    line-height: 40px;
+    
+    
+}
+#footer h3{
+    font-size: 17px;
+    font-family: 'Explora', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+#footer p{
+    font-size: 13px;
+    font-family: 'Explora', cursive;
+    font-family: 'Handlee', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+#img{
+    display: flex;
+    margin: auto;
+    width: 150px;
+    height: 90px;
+    
+}
+#logo{
+    background-color: black;
+    padding-top: 60px;
+}
+
+#ax{
+    display: flex;
+    width: 20%;
+    margin: auto;
+    
+}
+#ax img{
+width: 90%;
+height: 100%;
+}
+
+#logo>a>img{
+    display: flex;
+    margin: auto;
+    width: 121px;
+    height: 40px;
+    
+}
+
+#social_media{
+    display: flex;
+    margin: auto;
+   width: 10%;
+   justify-content: space-between;
+   margin-top: 10px;
+   font-size: 20px;
+   color: #FEF200;
+   margin-top: 60px;
+}
+#inf{
+    display: flex;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    padding-left: 80px;
+    color: #FEF200;
+   margin-top: 30px;
+
+   
+}
+#Akshay{
+    display: flex;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    /* padding-left: 10px; */
+    color: #FEF200;
+   margin-top: 30px;
+   padding-bottom: 30px;
+
+   }

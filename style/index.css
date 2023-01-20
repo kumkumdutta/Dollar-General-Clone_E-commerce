@@ -373,7 +373,16 @@
     padding-top: 60px;
 }
 
-
+#ax{
+    display: flex;
+    width: 20%;
+    margin: auto;
+    
+}
+#ax img{
+width: 90%;
+height: 100%;
+}
 
 #logo>a>img{
     display: flex;
