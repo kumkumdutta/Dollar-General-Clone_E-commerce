@@ -1,5 +1,5 @@
 //food and beverage
-  GET https://mocki.io/v1/255100d7-b3b6-448c-9fa6-624443e8c484?_limit=10&_page=1
+  GET https://mocki.io/v1/255100d7-b3b6-448c-9fa6-624443e8c484
 
 
 //electronics
@@ -8,4 +8,9 @@
 //beauty
 GET https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073
 
+//foodfront
+GET https://mocki.io/v1/1df01d70-b50d-42c3-820b-171e61bceb3e
 
+# foodcategory
+
+GET https://mocki.io/v1/45a0c6a5-b0e9-470b-b840-f8d5e1cdc21f
