@@ -30,13 +30,7 @@
     width: 150px;
     height: 140px;
 }
-.main-carousel{
-    width: 75%;
-    
-    margin: auto;
-   
-    
-}
+
 #search{
     border-radius: none;
     width: 500px;
@@ -46,6 +40,13 @@
 }
 #searchIcon{
     margin-left: -65px;
+}
+.main-carousel{
+    width: 75%;
+    
+    margin: auto;
+   
+    
 }
 
 
@@ -330,3 +331,4 @@
    padding-bottom: 30px;
 
    }
+   

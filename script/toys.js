@@ -12,11 +12,11 @@ function display(data){
 		let img= document.createElement("img")
 		img.setAttribute("src",el.image)
 		let name= document.createElement("h3");
-         name.textContent=el.name;
+         name.textContent=el.name.substr(0,10)+"...";
 		 let price =document.createElement("p")
-		 price.textContent=el.price
+		 price.textContent="₹"+el.price
 		 let btn= document.createElement("button")
-		 btn.textContent="Add T Cart"
+		 btn.textContent="Add To Cart"
 		div.append(img,name,price,btn)
 		document.querySelector("#cont").append(div)
 	})
