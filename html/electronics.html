@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Electronics | Apni Dukan</title>
+    <link rel="shortcut icon" href="../favicon/AD.jpg">
+    <script src="https://kit.fontawesome.com/0244637c96.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="../style/electronics.css">
@@ -127,11 +129,11 @@
             <h3 id="count"></h3>
         </div>
         <div>
-            <select name="" id="">
+            <select name="" id="filterSelect">
                 <!-- <button>Filter</button> -->
                 <option value="">Filter</option>
-                <option class="filVal" value="">Low To High</option>
-                <option class="filVal" value="">High To Low</option>
+                <option class="filVal" value="Low To High">Low To High</option>
+                <option class="filVal" value="High To Low">High To Low</option>
             </select>
         </div>
     </div>
@@ -244,44 +246,7 @@
 
 
 </body>
-<script>
-    let container=document.getElementById("container")
-    let count=document.getElementById("count");
-    let promise=fetch("https://mocki.io/v1/0a8e2cbc-e596-4fe5-b756-29cc94cfe284")
-    .then((res)=>{
-        return res.json();
-    })
-    .then((res)=>{
-        display(res.electronics)
-    })
-    function display(data){
-        data.forEach((element) => {
-            let box=document.createElement("div");
-            let imgDiv=document.createElement("div");
-            let image=document.createElement("img");
-            image.setAttribute("src",element.img);
-            imgDiv.append(image)
-
-            let title=document.createElement("h3");
-            title.innerText=element.title;
-            let reviews=document.createElement("h4");
-            reviews.innerText=element.reviews;
-            let rupees=document.createElement("h3");
-            rupees.innerText=`Rs. ${element.rupees}`;
-            let description=document.createElement("p");
-            description.innerText=element.description;
-            let avail=document.createElement("p");
-            avail.innerText=element.avail;
-            let button=document.createElement("button");
-            button.innerText="Add To Cart"
-            count.innerText=`${data.length} results`
-            
-            box.append(imgDiv,title,reviews,rupees,description,avail,button);
-            container.append(box)
-        });
-    }
-    
-</script>
+<script src="../script/electronics.js"></script>
 <script src="/path/to/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>

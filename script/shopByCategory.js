@@ -1,5 +1,6 @@
 let url= "https://636dca84b567eed48ac9262f.mockapi.io/blog"
 
+
 // let url= "https://63c6e85fd307b769674396ce.mockapi.io/childtoys"
 
 let storeData= []
@@ -10,6 +11,12 @@ fetch(url)
 	storeData=data
 	display (data)
 	console.log(data)
+	data.forEach((ele)=>{
+		console.log(ele.image)
+	})
+})
+.catch((error)=>{
+	console.log(error)
 })
 
 function search(){
@@ -33,7 +40,7 @@ function display(data){
 		
 		
 		let img= document.createElement("img")
-		img.setAttribute("src",el.image)
+		img.src=el.image
 		// let image_div=document.createElement("div")
 		// image_div.setAttribute("id","div_img")
 		// image_div.append(img)

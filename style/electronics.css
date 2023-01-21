@@ -57,6 +57,10 @@
 
 
 /* Dropdown */
+
+#hoverme{
+
+}
 .dropdown {
     float: left;
     overflow: hidden;
@@ -71,14 +75,16 @@
     padding: 10px 10px;
     background-color: inherit;
     /* font: inherit; Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+    margin: -5px; /* Important for vertical align on mobile phones */
   }
   
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(255, 242, 0);
-    width: 10px;
-    margin-left: 25px;
+    background-color: #FEF200;
+    width: 50px;
+    position: relative;
+    height: 42px;
+    margin-left: 20px;
   }
   
   /* Dropdown content (hidden by default) */
@@ -324,6 +330,7 @@ padding-bottom: 30px;
 /* border: 2px solid red; */
 width: 200px;
 height: 200px;
+margin-bottom: 20px;
 }
 #container>div>div>img{
 height: 200px;
@@ -331,8 +338,8 @@ margin-left: 20px;
 /* border: 2px solid rgb(0, 166, 255); */
 max-width: 100%;
 min-height: 100%;
-margin-bottom: 20px;
+margin-bottom: 50px;
 }
 #container>div>button{
-margin-top: 20px;
+margin-top: 25px;
 }

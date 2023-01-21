@@ -25,7 +25,13 @@ function display(data){
 		let name= document.createElement("h3");
          name.textContent=el.name.substr(0,10)+"...";
 		 let price =document.createElement("p")
+
          price.textContent="₹"+el.price
+
+
+		
+
+		 
 
 		 let btn= document.createElement("button")
 		 btn.textContent="Add To Cart"
