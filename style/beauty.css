@@ -228,7 +228,7 @@
   }
   #beauty-container {
   display: grid;
-  width: 70%;
+  width: 75%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -241,6 +241,7 @@
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   border-radius: 10px;
   padding: 20px;
+  width: 90%;
   
 }
 #beauty-container>div button{
@@ -261,7 +262,7 @@
 }
 
 #beauty-container img {
-    margin-left: 25px;
+    margin: auto;
   width: 100%;
   height:225px;
   margin-bottom: 20px;
@@ -276,9 +277,12 @@
     height: 40px;
     margin-top: 10px;
 }
-.akg{
-    margin-left: 20px;
+.ATC:hover{
+    background-color: lightgreen;
 }
+/* .akg{
+    margin: auto;
+} */
 #lower{
     width: 200px;
     height: 30px;
@@ -310,7 +314,7 @@
     margin-right: 165px;
 }
 #filter-btn:hover{
-    background-color: #cbf800d0;
+    background-color: lightgreen;
 }
 
   
