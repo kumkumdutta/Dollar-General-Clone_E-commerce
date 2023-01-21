@@ -142,6 +142,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 #beauty-container>div {
@@ -154,6 +155,53 @@
   width: 80%;
   height:225px;
 }
+.ATC{
+    display: block;
+    margin: auto;
+    background-color: #FEF200;
+    border-radius: 3px;
+    border: 1px black solid;
+    width:150px;
+    height: 40px;
+    margin-top: 10px;
+}
+.akg{
+    margin-left: 20px;
+}
+#lower{
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+}
+#upper{
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+}
+.name{
+    margin-top: 10px;
+}
+.price{
+    margin-top: 10px;
+}
+.avail{
+    margin-top: 10px;
+}
+#filter-btn{
+    display: block;
+    margin: auto;
+    background-color: #FEF200;
+    border-radius: 3px;
+    border: 1px black solid;
+    width:100px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 165px;
+}
+#filter-btn:hover{
+    background-color: #cbf800d0;
+}
+
   
 
 
