@@ -18,6 +18,7 @@
 
     #nav {
         background-color: white;
+        height: 70px;
     }
 
     #rbname {
@@ -26,9 +27,10 @@
     }
 
     #logo-name {
-        display: flex;
+       border: green solid;
         align-items: center;
-        width: 30%;
+        width: 20%;
+        height: 100%;
         margin-left: 150px;
     }
 
@@ -39,9 +41,12 @@
     }
 
     #logo {
-        width: 20%;
-        height: 10%;
+        
+        width: 300px;
+        height: 150px;
+        padding-bottom: 30px;
     }
+
 
     #body {
         display: flex;
@@ -120,8 +125,8 @@
 <body>
     <div id="nav">
         <div id="logo-name">
-            <img id="logo" src="./nobg2.png" alt="#">
-            <a id="rbname" href="index.html">REVIVE BEAUTY</a>
+            <img id="logo" src="../favicon/logo.png" alt="#">
+            <a id="rbname" href="index.html"></a>
         </div>
     </div>
     <div id="body">
@@ -129,8 +134,12 @@
             <h2>About You</h2>
             <p>Sign Up With</p>
             <div id="social-signup">
-                <button> <ion-icon name="logo-facebook"></ion-icon></button>
-                <button> <i class="fab fa-google fa-2x"></i></button>
+                <button> <a href="../html/login.html"><i class="fab fa-google fa-2x"></i></a>
+                    
+                    
+                    
+                </button>
+                
             </div>
             <p>Or create an email account </p>
             <p class="no-input"></p>
@@ -180,7 +189,10 @@
         signup()
 
     })
-
+let data = JSON.parse(localStorage.getItem("userdetails"));
+if(data==null){
+    data=[];
+}
     function signup() {
         let fullname = document.querySelector(".full-name").value
         let email = document.querySelector(".email").value
@@ -195,6 +207,7 @@
             pswd: password,
             number: mobile
         }
+        data.push(user)
 
 
         if (fullname == '' || email == '' || c_email == '' || password == '' || c_password == '' || mobile == '') {
@@ -202,7 +215,7 @@
         }
         else {
             document.querySelector('.no-input').textContent = 'SignUp successfull'
-            localStorage.setItem('userdetails', JSON.stringify(user))
+            localStorage.setItem('userdetails', JSON.stringify(data))
             window.location.href = './login.html'
 
         }

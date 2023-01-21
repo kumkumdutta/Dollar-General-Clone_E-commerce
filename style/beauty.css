@@ -228,7 +228,7 @@
   }
   #beauty-container {
   display: grid;
-  width: 75%;
+  width: 85%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -241,7 +241,7 @@
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   border-radius: 10px;
   padding: 20px;
-  width: 90%;
+  width: 95%;
   
 }
 #beauty-container>div button{
@@ -262,9 +262,7 @@
 }
 
 #beauty-container img {
-
     margin: auto;
-
   width: 100%;
   height:225px;
   margin-bottom: 20px;
@@ -313,7 +311,7 @@
     width:100px;
     height: 30px;
     margin-top: 10px;
-    margin-right: 165px;
+    margin-right: 145px;
 }
 #filter-btn:hover{
     background-color: lightgreen;
@@ -417,3 +415,7 @@ height: 100%;
    padding-bottom: 30px;
 
    }
+   #chnge {
+    display: flex;
+    gap:5px;
+  }

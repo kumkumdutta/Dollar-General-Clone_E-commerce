@@ -143,7 +143,9 @@
             <button id='login-btn'>LOGIN TO YOUR ACCOUNT</button>
             <p>Or, Continue with</p>
             <div id="social-login">
-                <button> <ion-icon name="logo-facebook"></ion-icon></button>
+                <button>  <ion-icon name="logo-facebook"></ion-icon>
+                    
+                </button>
                 <button> <i class="fab fa-google fa-2x"></i></button>
             </div>
         </div>
@@ -175,23 +177,26 @@
         let emailV = email.value.trim()
         let passwordV = password.value.trim()
 
-        let user = localStorage.getItem("userdetails");
-        let data = JSON.parse(user);
+        let user =JSON.parse(localStorage.getItem("userdetails")); 
+        
 
         if (emailV == "") {
             setError(email, 'Email is required')
         }
-        if (emailV != data.mail) {
+        user.forEach((element)=>{
+            if (emailV != element.mail) {
             setError(email, 'Enter the email that you used to signup')
         }
-        if (passwordV != data.pswd) {
+        if (passwordV != element.pswd) {
             setError(password, 'Wrong Password')
         }
-        else if (emailV == data.mail && passwordV == data.pswd) {
+        else if (emailV == element.mail && passwordV == element.pswd) {
+            console.log("yaay")
             alert("Login Success")
             window.location.assign("index.html");
         }
     }
+        )}
 
     let setError = (e, message) => {
         let inputControl = e.parentElement
