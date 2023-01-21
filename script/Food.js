@@ -110,6 +110,28 @@ avail.classList.add("avail");
 avail.innerText = element.avail
 let adc = document.createElement("button");
 adc.innerText = "Add To Cart"
+adc.addEventListener("click",()=>{
+
+    let favouriteData = JSON.parse(localStorage.getItem("cartitem"));
+    if(favouriteData===null) favouriteData = [];
+     
+      let alreadyaddedinfavourites = false;
+for(let i=0; i<favouriteData.length; i++){
+if(favouriteData[i].id === element.id){
+alreadyaddedinfavourites = true;
+break;
+};
+}
+if(alreadyaddedinfavourites === true){
+alert("item already in cart")
+}else{
+
+favouriteData.push({...element,});
+localStorage.setItem("cartitem",JSON.stringify(favouriteData));
+alert("Item Added To Favourites") 
+}
+    }
+  )
 adc.classList.add("adc")
 
      card.append(imagediv,title,reviews,price,category,description,avail,adc)
@@ -117,3 +139,37 @@ adc.classList.add("adc")
      cont.append(card)
     })
 }
+let searchIcon = document.getElementById("searchIcon");
+searchIcon.addEventListener("click",function(){
+    let input = document.getElementById("search");
+    abc.innerHTML=""
+    abc.style.width = 0;
+    abc.style.height= 0;
+    bfy.innerHTML=""
+    bfy.style.width = 0;
+    bfy.style.height= 0;
+    alc.innerHTML=""
+    alc.style.width = 0;
+    alc.style.height= 0;
+    
+
+       cont.innerHTML=null
+    console.log(title.innerText)
+    fetch("https://mocki.io/v1/255100d7-b3b6-448c-9fa6-624443e8c484")
+    .then((res)=>{
+        return res.json();
+    })
+    .then((Data)=>{
+fooddata=Data
+let filtered = fooddata.filter((ele,ind)=>{
+        
+    if(ele.category==input.value){
+        return true
+    }else{
+        return false
+    }
+})
+rendercard(filtered)
+    })
+    
+})

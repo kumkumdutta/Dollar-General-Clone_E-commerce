@@ -303,12 +303,12 @@ img {
     margin-bottom: 5px;
     font-size: small;
 }
-#filter {
-    height: 400px;
-    width: 200px;
-    border: 5px red solid;
+/* #filter { */
+    
+    /* border: 5px red solid;
     padding-left: 50px;
-}
+} */
 #detail {
     margin-left: 800px;
+    
 }
