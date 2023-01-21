@@ -45,6 +45,15 @@ margin:auto;
 text-align: center;
 }
 
+/* ----filter button-----*/
+
+#filter{
+	margin-left: 1080px;
+	padding: 7px 15px;
+	border: none;
+	background-color: #FEF200;
+	font-size: 20px;
+}
 
 #cont img{
 	width: 50%;
