@@ -1,38 +1,34 @@
-let url= "https://636dca84b567eed48ac9262f.mockapi.io/product"
- 
-let  bachatoys =" https://63c6e85fd307b769674396ce.mockapi.io/childtoys"
+let url= "https://636dca84b567eed48ac9262f.mockapi.io/blog"
 
-// let shopbychild= document.querySelector("#fetchData")
-// shopbychild.addEventListener("click",child)
+// let url= "https://63c6e85fd307b769674396ce.mockapi.io/childtoys"
 
-// function child(){
-// 	fetch(bachatoys)
-// .then((res)=>{
-// 	return res.json()
-// }).then((data)=>{
-// 	display (data)
-// })
 
-// }
- 
 fetch(url)
 .then((res)=>{
 	return res.json()
 }).then((data)=>{
 	display (data)
+	console.log(data)
 })
+
+
 
 
 
 function display(data){
 	data.forEach((el)=>{
 		let div= document.createElement("div")
+		
+		
 		let img= document.createElement("img")
 		img.setAttribute("src",el.image)
+		// let image_div=document.createElement("div")
+		// image_div.setAttribute("id","div_img")
+		// image_div.append(img)
 		let name= document.createElement("h3");
-         name.textContent=el.name;
+         name.textContent=el.name.substring(0,20)+"...";
 		 let price =document.createElement("p")
-		 price.textContent= "Rs."+  el.price
+		 price.textContent=el.price
 		 let btn= document.createElement("button")
 		 btn.textContent="Add T Cart"
 		div.append(img,name,price,btn)

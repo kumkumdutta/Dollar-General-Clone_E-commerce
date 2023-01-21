@@ -1,6 +1,41 @@
-   #green_image{
-	   
-   }
+       body{
+		font-family:    Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	   }
+	   *{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	#green_image{
+		margin-top: 50px;
+	}
+	#nav1{
+		position: sticky;
+		z-index: 1;
+		top: 0;
+	
+	}
+	#nav1>div{
+		display: flex;
+		margin: auto;
+		height: 70px;
+		align-content: center;
+		background-color: #FEF200;
+		justify-content: space-evenly;
+		font-size: 18px;
+		align-items: center;
+		padding: 7px;
+	}
+	#nav1 a {
+		text-decoration: none;
+		color: black;
+		font-family: 'Nunito', sans-serif;
+		font-weight: bold;
+	}
+	#nav1 img{
+		width: 150px;
+		height: 140px;
+	}
 		#cont{
 			width: 70%;
 			display: grid;
@@ -11,25 +46,51 @@
 		}
 		
 		#cont img{
-			width: 30%;
+			width: 50%;
 		}
 		#cont>div{
 			box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+			height: 300px;
+			margin-top: 20px;
+			padding-top: 20px;
 		}
 		#cont button{
 			padding: 8px 20px;
-			border: none;
+			/* border: none; */
 			background: yellow;
            margin-bottom: 10px;
+		   margin-top: 20px;
+		   border: 1px solid black;
+		}
+		#image_div{
+			width: 1;
+		}
+		#div_img{
+			/* height: auto; */
+			background-color: aqua;
+		}
+		#cont button:hover{
+			/* width: 20%; */
+			background: rgb(97, 99, 90);
 		}
 		#green_image{
-			border: 2px solid green ;
+			/* border: 2px solid green ; */
 			/* background: red; */
 			margin-left: 260px;
 		}
-	#cont{
-		/* background: yellow; */
-		border: 4px solid yellow;
+	#cont button{
+		background: yellow;
+		
+	}
+	#search{
+		border-radius: none;
+		width: 500px;
+		height: 40px;
+		padding-left: 20px;
+	
+	}
+	#searchIcon{
+		margin-left: -65px;
 	}
 	#toys{
 		background-color: yellow;
@@ -81,15 +142,19 @@
 		margin-bottom: 50px;
 		
 	}
+	#month{
+		font-size: 1px;
+		/* background: black; */
+	}
 	#byAge div{
-		width: 60%;
-		height: 90px;
+		width: 65%;
+		height: 100px;
 		border-radius: 70%;
 		border: 3px solid yellow;
 	}
 	#byAge div a{
 		text-decoration: none;
-		font-size: 30px;
+		font-size: 25px;
 		color: rgb(65, 63, 63);
 		display: flex;
 		text-align: center;
@@ -99,9 +164,10 @@
 		margin-right: 30px;
 		border-radius: 2px solid red;
 		padding-top: 2px; */
+		padding-top: 12px;
 	}
 	#lasta{
-      padding-top: 19px;
+      padding-top: 22px;
 	  padding-left: 26px;
 	}
 	#baby{
@@ -110,3 +176,141 @@
 		text-align: center;
 		margin-bottom: 40px;
 	}
+
+	#brands{
+		display: flex;
+		width: 60%;
+		margin: auto;
+		border: 2px solid yellow;
+		gap: 6px;
+		margin-bottom: 40px;
+		text-align: center;
+
+	}
+	#brands img{
+		width: 40%;
+		 
+	}
+	#brands button{
+		 background-color: yellow;
+		 padding:5px 10px;
+		 border-radius: none;
+		 border: 1px solid black;
+		 margin-bottom: 5px;
+	}
+	.img-div{
+		width: 100%;
+		height: 70px;
+		/* border: 2px solid red; */
+	}
+	
+	.box-shadow{
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+	}
+	#shopByBrands{
+		width: 70%;
+		margin: auto;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	#brandImages{
+		display: grid;
+		grid-template-columns: repeat(8,1fr);
+		gap: 10px;
+		width: 70%;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	#brandImages img{
+		width: 100%;
+	}
+
+
+	/* -------footer ------- */
+	#footer{
+		display: flex;
+		margin: auto;
+		background-color: #000;
+	}
+	#footer>#dx{
+		width: 20%;
+		color: white;
+		padding-top: 20px;
+		padding-left: 150px;
+		text-align: left;
+		line-height: 40px;
+		
+		
+	}
+	#footer h3{
+		font-size: 17px;
+		font-family: 'Explora', cursive;
+		font-family: 'Montserrat', sans-serif;
+		font-family: 'Nunito', sans-serif;
+		font-family: 'Nunito Sans', sans-serif;
+		font-family: 'Varela Round', sans-serif;
+	}
+	#footer p{
+		font-size: 13px;
+		font-family: 'Explora', cursive;
+		font-family: 'Handlee', cursive;
+		font-family: 'Nunito', sans-serif;
+		font-family: 'Nunito Sans', sans-serif;
+		font-family: 'Varela Round', sans-serif;
+		
+	}
+	#img{
+		display: flex;
+		margin: auto;
+		width: 150px;
+		height: 90px;
+		
+	}
+	#logo{
+		background-color: black;
+		padding-top: 60px;
+	}
+	
+	
+	
+	#logo>a>img{
+		display: flex;
+		margin: auto;
+		width: 121px;
+		height: 40px;
+		
+	}
+	
+	#social_media{
+		display: flex;
+		margin: auto;
+	   width: 10%;
+	   justify-content: space-between;
+	   margin-top: 10px;
+	   font-size: 20px;
+	   color: #FEF200;
+	   margin-top: 60px;
+	}
+	#inf{
+		display: flex;
+		margin: auto;
+		width: 25%;
+		text-align: center;
+		padding-left: 80px;
+		color: #FEF200;
+	   margin-top: 30px;
+	
+	   
+	}
+	#Akshay{
+		display: flex;
+		margin: auto;
+		width: 25%;
+		text-align: center;
+		/* padding-left: 10px; */
+		color: #FEF200;
+	   margin-top: 30px;
+	   padding-bottom: 30px;
+	
+	   }
