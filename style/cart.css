@@ -24,15 +24,15 @@
     text-decoration: none;
     color: black;
     font-family: 'Nunito', sans-serif;
-    font-weight: bold;
+    font-weight: none;
 }
 #nav1 img{
     width: 150px;
     height: 140px;
 }
 #search{
-    border-radius: 5px;
-    width: 480px;
+    border-radius: 3px;
+    width: 450px;
     height: 40px;
     padding-left: 20px;
 
@@ -75,9 +75,15 @@ button{
     border-radius: 7px;
     width: 200px;
     height: 40px;
+    border: none;
 }
 #container h2{
     color: red;
+}
+button:hover{
+    cursor: pointer;
+    background-color: lightgreen;
+    color: #ffffff;
 }
 
 
