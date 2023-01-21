@@ -75,7 +75,7 @@ const url = `https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073`;
     let container = document.getElementById("beauty-container");
     let filterbutton = document.getElementById("filter-btn");
     
-    let alert= document.getElementById("alert");
+    
     
 
 
@@ -87,7 +87,7 @@ const url = `https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073`;
       let lower= document.getElementById("lower");
       let upper= document.getElementById("upper");
       let filteredData = fetchedData.filter((element) =>{
-        if(element.price >= lower.value && element.price <= upper.value) {
+        if(element.rupees >= lower.value && element.rupees <= upper.value) {
           return true;
         } else {
           return false;
@@ -95,7 +95,7 @@ const url = `https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073`;
       })
       container.innerHTML=null;
 
-      displayRestaurant(filteredData);
+      displayEcommerce(filteredData);
     })
 
 
@@ -158,42 +158,49 @@ const url = `https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073`;
       return res.json();
     })
     .then((actualData) =>{
-      //console.log(actualData)
+      
       fetchedData = actualData.data;
-      //console.log(fetchedData)
-      displayRestaurant(fetchedData);
+      displayEcommerce(fetchedData);
     })
     .catch((error) =>{
       console.log(error);
     })
 
-    function displayRestaurant(data){
+    function displayEcommerce(data){
       data.forEach((element)=>{
         let card = document.createElement("div");
         let image = document.createElement("img");
+        image.classList.add("akg")
         image.setAttribute("src", element.img);
 
+
+        let name = document.createElement("h2");
+        name.classList.add("name")
+        name.innerText = element.title.substr(0,20)+"....";
         let imgDiv=document.createElement("div");
         image.setAttribute("src",element.img);
         imgDiv.append(image)
 
-        let name = document.createElement("h3");
-        name.innerText = element.title.substr(0,20)+"...";
+       
 
         let price= document.createElement("h2");
-        price.innerText = ("Rs ")+(element.rupees);
+        price.classList.add("price")
+        price.innerText = ("₹")+(element.rupees);
 
         let available = document.createElement("p");
+        available.classList.add("avail")
         available.innerText = element.avail;
 
         
 
-        let buy = document.createElement("button");
-        buy.innerText = "Add To Cart"
+        let button = document.createElement("button");
+        button.classList.add("ATC")
+        button.innerText = "Add To Cart"
+
         
 
-        buy.addEventListener("click", () =>{
-          let cartData = JSON.parse(localStorage.getItem("buy")) || [];
+        button.addEventListener("click", () =>{
+          let cartData = JSON.parse(localStorage.getItem("cartitem")) || [];
           let isAllreadyInCart = false;
           for(let i=0;i<cartData.length; i++){
             if(cartData[i].id === element.id) {
@@ -204,16 +211,18 @@ const url = `https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073`;
 
 
           if(isAllreadyInCart === true) {
-            alert.innerText="Already Placed Order"
+            alert("Your Item is Already in Cart")
             
           }else{
             cartData.push(element);
-            localStorage.setItem("buy", JSON.stringify(cartData));
+            localStorage.setItem("cartitem", JSON.stringify(cartData));
             
-            alert.innerText="Successfully Placed Order"
+            alert("Item Added to Cart🛍️")
           }
         });
-        card.append(imgDiv, name, price,available, buy);
+
+        card.append(image, name, price,available, button);
+
         container.append(card);
       })
     }
