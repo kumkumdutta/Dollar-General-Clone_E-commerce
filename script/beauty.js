@@ -174,7 +174,7 @@ const url = `https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073`;
         image.setAttribute("src", element.img);
 
 
-        let name = document.createElement("h2");
+        let name = document.createElement("h3");
         name.classList.add("name")
         name.innerText = element.title.substr(0,20)+"....";
         let imgDiv=document.createElement("div");
@@ -183,7 +183,7 @@ const url = `https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073`;
 
        
 
-        let price= document.createElement("h2");
+        let price= document.createElement("h3");
         price.classList.add("price")
         price.innerText = ("₹")+(element.rupees);
 
