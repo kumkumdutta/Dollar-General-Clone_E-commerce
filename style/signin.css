@@ -1,6 +1,6 @@
-/* body{
-    background: lightgray;
-} */
+body{
+    background-color: lightgray;
+}
 
 #sign img{
     width: 370px;
@@ -16,9 +16,13 @@ h3{
     margin-top: 40px;
 } */
 #sign{
+    background-color: #ffffff;
+}
+#sign{
     text-align: left;
     text-decoration: none solid rgb(0,0,0);
     background-color: #ffffff;
+    z-index: ;
     box-sizing: border-box;
     background: 0%,0%;
     height: 714px;
@@ -70,4 +74,15 @@ button:hover{
 }
 /* #sign a{
     margin-top: 100px;
+    color: red;
+} */
+
+#pass{
+    margin-bottom: 20px;
+}
+/* #for{
+    margin-top: 10px;
+    border: 3px solid red;
+    padding-top: 20px;
+    margin-bottom: -20px;
 } */
