@@ -173,8 +173,12 @@ const url = `https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073`;
         let image = document.createElement("img");
         image.setAttribute("src", element.img);
 
-        let name = document.createElement("h2");
-        name.innerText = element.title;
+        let imgDiv=document.createElement("div");
+        image.setAttribute("src",element.img);
+        imgDiv.append(image)
+
+        let name = document.createElement("h3");
+        name.innerText = element.title.substr(0,20)+"...";
 
         let price= document.createElement("h2");
         price.innerText = ("Rs ")+(element.rupees);
@@ -209,7 +213,7 @@ const url = `https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073`;
             alert.innerText="Successfully Placed Order"
           }
         });
-        card.append(image, name, price,available, buy);
+        card.append(imgDiv, name, price,available, buy);
         container.append(card);
       })
     }
