@@ -9,11 +9,11 @@
 </head>
 <body>
     <div id="sign">
-        <img src="../favicon/logo.png" alt="logo">
+        <img src="../favicon/sticker.png" alt="logo">
         <h3>Sign In</h3>
         <label for="">
             <p>Email or Phone Number</p>
-        <input type="text" name="email">
+        <input id="email" type="text" name="email">
         </label><br>
 
         <label for="">
@@ -23,8 +23,11 @@
 
        <a id="for" href="">Forgot password?</a>
 
-        <input type="checkbox"Keep me signed in on this device>
-        <label for="Signed In">Keep me signed in on this device</label>
+        <form>
+            <div>
+                <label id="keep"><input id="box" type="checkbox" /> Keep me signed in on this device</label>
+            </div>
+        <form>
 
         <button id="b1">Sign In</button>
         <a href="signup.html"><button id="b2">Create Account</button></a>
