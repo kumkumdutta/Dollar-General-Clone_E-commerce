@@ -173,9 +173,15 @@ const url = `https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073`;
         image.classList.add("akg")
         image.setAttribute("src", element.img);
 
+
         let name = document.createElement("h2");
         name.classList.add("name")
         name.innerText = element.title.substr(0,20)+"....";
+        let imgDiv=document.createElement("div");
+        image.setAttribute("src",element.img);
+        imgDiv.append(image)
+
+       
 
         let price= document.createElement("h2");
         price.classList.add("price")
@@ -214,7 +220,9 @@ const url = `https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073`;
             alert("Item Added to Cart🛍️")
           }
         });
+
         card.append(image, name, price,available, button);
+
         container.append(card);
       })
     }
