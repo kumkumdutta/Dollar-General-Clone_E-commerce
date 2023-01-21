@@ -24,8 +24,8 @@
 
             <a href="">Careers</a>
 
-            <input id="search" type="text" placeholder="Search for a product">
-            <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+            <input id="search" type="text" placeholder="Search for a product" oninput="search()">
+            <i id="searchIcon" class="fa-solid fa-magnifying-glass" ></i>
 
 
 
@@ -48,6 +48,11 @@
 		<div ></div>
 		<h1 id="toys">0-24 Months</h1>
 	</div>
+	<select name="price" id="filter" onchange="filterfun()">
+		<option value="">Filter</option>
+		<option value="LTH"> Price Low To High</option>
+		<option value="HTL">Price High To Low</option>
+	</select>
 	<div id="cont">
 
 	</div>
