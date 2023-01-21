@@ -33,6 +33,7 @@
             button.innerText="Add To Cart"
 
             button.addEventListener("click",()=>{
+                alert("Item Added to cart🛍️")
                 cart_data.push(element);
                 console.log("Add To catttt")
                 localStorage.setItem("cartitem",JSON.stringify(cart_data));

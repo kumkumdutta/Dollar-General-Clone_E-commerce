@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form>div>div>input{
+        width: 300px;
+        padding: 10px;
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .small{
+        margin: 15px;
+        
+    }
+    #btn{
+        width: 300px;
+        padding: 10px;
+        background-color: #53cdb1c0;
+        border: none;
+    }
+    #btn:hover{
+        background-color: black;
+        color: white;
+    }
+
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+.icon img{
+    margin-top: 15px;
+}
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #04b48bc0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li:hover{
+    background-color: #84f1d8;
+    transition: 0.9s;
+    border-radius: 60px;
+}
+.navigation ul li:nth-child(1){
+    margin-bottom: 20px;
+}
+.navigation ul li:nth-child(1):hover{
+    background: transparent;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a{
+    font-size: 20px;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <span class="icon"><img id="AD" style="margin-top: 12px;" src="../AD.jpg" height="40px" alt=""></span>
+                        <span class="title"><h2>Apni Dukan</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./dashboard.html">
+                        <span class="icon"><img src="../Images/icons8-home-page-30.png" alt=""></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./products.html">
+                        <span class="icon"><img src="../Images/icons8-diversity-24.png" alt=""></span>
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><img src="../Images/icons8-people-30.png" alt=""></span>
+                        <span class="title">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><img src="../Images/icons8-settings-24.png" alt=""></i></span>
+                        <span class="title">Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><img src="../Images/icons8-logout-rounded-up-32.png" alt=""></span>
+                        <span class="title">LogOut</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    <div style="height: 500px;width: 500px; margin-left: 600px">
+        <form>
+            <div style="width: 450px;margin: auto;background-color: rgb(224, 234, 243);box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;padding: 30px">
+                <h1 style="text-align: center;">Add Product</h1>
+                <div class="small">
+                    <input type="text" id="productName" placeholder="Name">
+                </div>
+                <div class="small">
+                    <input type="text" id="productImg" placeholder="Image Url">
+                </div>
+                <div class="small">
+                    <input type="number" id="productPrice" placeholder="Price">
+                </div>
+                <div class="small">
+                    <input id="btn" type="submit" value="Add Product" name="Add Product" id="">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    let productName=document.getElementById("productName");
+    let productImg=document.getElementById("productImg");
+    let productPrice=document.getElementById("productPrice");
+</script>
+</html>
