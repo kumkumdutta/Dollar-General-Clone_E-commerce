@@ -330,7 +330,7 @@
     height: 50%;
     margin: auto;
 }
-#footer{
+/* #footer{
     display: flex;
     margin: auto;
     background-color: #000;
@@ -368,6 +368,122 @@
     width: 150px;
     height: 90px;
     
+}
+#logo{
+    background-color: black;
+    padding-top: 60px;
+}
+
+#ax{
+    display: flex;
+    width: 20%;
+    margin: auto;
+    
+}
+#ax img{
+width: 90%;
+height: 100%;
+}
+
+#logo>a>img{
+    display: flex;
+    margin: auto;
+    width: 121px;
+    height: 40px;
+    
+}
+
+#social_media{
+    display: flex;
+    margin: auto;
+   width: 10%;
+   justify-content: space-between;
+   margin-top: 10px;
+   font-size: 20px;
+   color: #FEF200;
+   margin-top: 60px;
+}
+#inf{
+    display: flex;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    padding-left: 80px;
+    color: #FEF200;
+   margin-top: 30px;
+
+   
+}
+#Akshay{
+    display: flex;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    /* padding-left: 10px; */
+    /* color: #FEF200;
+   margin-top: 30px;
+   padding-bottom: 30px;
+
+   } */ 
+
+
+
+
+   #footer{
+    display: flex;
+    margin: auto;
+    background-color: #000;
+}
+#footer>#dx{
+    width: 20%;
+    color: white;
+    padding-top: 20px;
+    padding-left: 150px;
+    text-align: left;
+    line-height: 40px;
+    
+    
+}
+#footer h3{
+    font-size: 17px;
+    font-family: 'Explora', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+#footer p{
+    font-size: 13px;
+    font-family: 'Explora', cursive;
+    font-family: 'Handlee', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+#img{
+    display: flex;
+    margin: auto;
+    width: 150px;
+    height: 90px;
+  
+}
+
+#joker{
+  display: flex;
+  margin: auto;
+  width: 400px;
+  justify-content: space-between;
+  height: 50px;
+
+}
+#joker>a{
+  height: 50px;
+  width:45%;
+}
+#joker>a>img{
+  width: 100%;
+  height: 100%;
 }
 #logo{
     background-color: black;
