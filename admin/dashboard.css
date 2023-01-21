@@ -129,3 +129,16 @@ section{
     width: 50px;
     margin-top: 6px;
 }
+
+table, th, td {
+    font-size: 18px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+  }
+  th{
+    background-color: #04b48bc0;
+  }
+  td{
+    background-color: #bad9d2c0;;
+  }
