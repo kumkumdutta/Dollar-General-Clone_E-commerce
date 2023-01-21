@@ -34,7 +34,7 @@ function display(data){
 		 let price =document.createElement("p")
 
 		
-=======
+
 		 price.textContent="₹"+el.price
 
 		 let btn= document.createElement("button")
