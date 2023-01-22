@@ -233,7 +233,13 @@ button:hover{
     margin-top: 10px;
 }
 #quantity {
+    /* border: 2px solid red; */
     display: flex;
+    justify-content: space-around;
+}
+.span{
+    font-size: 20px;
+    margin-top: 5px;
 }
 
 
@@ -338,6 +344,10 @@ button:hover{
     border: 1px solid lightgrey;
     border-radius: 3px;
   }
+  .plus, .minus{
+    width: 80px;
+  }
+  
   
   input[type=text] {
     width: 100%;

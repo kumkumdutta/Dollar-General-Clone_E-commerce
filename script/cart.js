@@ -71,13 +71,17 @@ let cartPro=document.getElementById("check")
             price.innerText = "₹"+" "+element.rupees;
             let category = document.createElement("p");
             category.classList.add("category")
-            category.innerText = element.category;
+            category.innerText = "Category is not defined"
             let increment = document.createElement("button");
             let quantity = document.createElement("div");
             quantity.setAttribute("id","quantity")
             increment.textContent="+";
+            increment.classList.add("plus");
+
             let decrement = document.createElement("button");
             decrement.textContent="-";
+            decrement.classList.add("minus")
+
             let span = document.createElement("span");
             span.textContent = 1;
             span.classList.add("span")
