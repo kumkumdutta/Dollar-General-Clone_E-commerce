@@ -115,7 +115,7 @@ nav{
 	color: rgb(124, 121, 121);
 	font-family: "Open Sans", sans-serif;
 	background: yellow;
-	border:2px solid red;
+	
 }
 #hiring h3{
 	color: rgb(238, 160, 160);
@@ -142,7 +142,7 @@ footer{
 	display: flex;
 	width: 50%;
 	margin: auto;
-	border: 2px solid red;
+	
 }
 #fot_part >div{
 	width: 50%;
