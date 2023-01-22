@@ -161,7 +161,7 @@
     let registerBtn = document.querySelector('#register')
     registerBtn.addEventListener('click', e => {
         e.preventDefault()
-        window.location.href = "signup.html"
+        window.location.href = "./Signup.html"
     })
 
     let loginBtn = document.querySelector('#login-btn')
@@ -194,7 +194,7 @@
         else if (emailV == element.mail && passwordV == element.pswd) {
             console.log("yaay")
             alert("Login Success")
-            window.location.assign("index.html");
+            window.location.assign("../index.html");
         }
     }
         )}
