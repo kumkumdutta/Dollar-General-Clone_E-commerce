@@ -170,5 +170,37 @@ body{
     let productName=document.getElementById("productName");
     let productImg=document.getElementById("productImg");
     let productPrice=document.getElementById("productPrice");
+    let button=document.getElementById("btn");
+    button.addEventListener("click",(e)=>{
+        e.preventDefault();
+        let proName=productName.value;
+        let proImg=productImg.value;
+        let proPrice=productPrice.value;
+
+        let userObj={
+            name:proName,
+            img:proImg,
+            price:proPrice
+        }
+        addProduct(userObj)
+    })
+    
+    
+
+    function addProduct(userObj){
+        fetch("https://mocki.io/v1/200656c1-7141-45bf-9a68-c54e88a875f3",{
+            method:"POST",
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(userObj)
+        })
+        .then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+            console.log(data);
+        })
+    }
 </script>
 </html>

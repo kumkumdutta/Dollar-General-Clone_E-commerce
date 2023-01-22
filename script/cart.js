@@ -1,17 +1,46 @@
 let container1 = document.getElementById("container1");
 let container = document.getElementById("container");
-
+let sum=0;
+let checkout=document.getElementById("checkout");
+let cartPro=document.getElementById("check")
     let cartData = JSON.parse(localStorage.getItem("cartitem"));
-    if(cartData === null) cartData = [];
-    if (cartData.length>0){
-        container.innerHTML=`<h1>your cart total is :-</h1>`
+    if(cartData === null){
+        cartData=[];
+        
     }
-
+    if (cartData.length>0){
+        for(let i=0;i<cartData.length;i++){
+            sum+=cartData[i].rupees;
+        }
+        console.log(typeof sum)
+        
+        container.innerHTML=`<h1>your cart total is :- ₹. ${sum}</h1>`
     
+        checkout.innerHTML=`
+        <div>
+            <p>PRODUCT DETAIL</p>
+            <hr>
+            <div class="priceDisplay">
+                <div><p>Delivery Charges: </p></div>
+                <div><h3>FREE<span></h3>
+            </div>
+            
+        </div>
+        <div>
+                <hr>
+                <div class="priceDisplay">
+                    <div><h3>Total Payable: </h3></div>
+                    <div><h2>₹ ${sum}</h2></div>
+                </div>
+                <div><button id="continue">Continue</button></div>
+        </div>
+        `
+    }
+    let continueBtn=document.getElementById("continue");
+    continueBtn.addEventListener("click",()=>{
+        console.log("checkout")
+    })
 
-    // }else {
-    //     // 
-    // }
     displayProduct(cartData)
    function displayProduct(data){
     
@@ -52,7 +81,61 @@ let container = document.getElementById("container");
             let span = document.createElement("span");
             span.textContent = 1;
             span.classList.add("span")
-
+            increment.addEventListener("click",()=>{
+                span.innerText++;
+                for(let i=0;i<cartData.length;i++){
+                    sum=sum+Number(span.innerText*Number(cartData[i].rupees));
+                }
+                container.innerHTML=`<h1>your cart total is :- ₹. ${sum}</h1>`
+                console.log(typeof sum)
+                checkout.innerHTML=`
+                    <div>
+                        <p>PRODUCT DETAIL</p>
+                        <hr>
+                        <div class="priceDisplay">
+                            <div><p>Delivery Charges: </p></div>
+                            <div><h3>FREE<span></h3>
+                        </div>
+                        
+                    </div>
+                    <div>
+                            <hr>
+                            <div class="priceDisplay">
+                                <div><h3>Total Payable: </h3></div>
+                                <div><h2>₹ ${sum}</h2></div>
+                            </div>
+                            <div><button id="continue">Continue</button></div>
+                    </div>
+                    `
+                })
+            decrement.addEventListener("click",()=>{
+                span.innerText--;
+                for(let i=0;i<cartData.length;i++){
+                    sum=sum-Number(span.innerText*Number(cartData[i].rupees));
+                }
+                container.innerHTML=`<h1>your cart total is :- ₹. ${sum}</h1>`
+                console.log(typeof sum)
+                checkout.innerHTML=`
+                <div>
+                    <p>PRODUCT DETAIL</p>
+                    <hr>
+                    <div class="priceDisplay">
+                        <div><p>Delivery Charges: </p></div>
+                        <div><h3>FREE<span></h3>
+                    </div>
+                    
+                </div>
+                <div>
+                        <hr>
+                        <div class="priceDisplay">
+                            <div><h3>Total Payable: </h3></div>
+                            <div><h2>₹ ${sum}</h2></div>
+                        </div>
+                        <div><button id="continue">Continue</button></div>
+                </div>
+                `
+            })
+           
             let dltbtn = document.createElement("button");
             quantity.append(increment,span,decrement)
             dltbtn.innerText="Remove"
@@ -79,3 +162,36 @@ let container = document.getElementById("container");
             container1.append(card)
         })
     }
+
+
+    document.querySelector("#continue").addEventListener("click",function(){
+        document.querySelector(".popup").classList.add("active");
+    })
+
+    document.querySelector(".btn").addEventListener("click",function(){
+        document.querySelector(".popup").classList.remove("active");
+    })
+let formName=document.getElementById("fname");
+let formEmail=document.getElementById("email");
+let formAdd=document.getElementById("adr");
+let formCity=document.getElementById("city");
+let formState=document.getElementById("state")
+let formZip=document.getElementById("zip");
+let formCard=document.getElementById("cname");
+let formCC=document.getElementById("ccnum");
+let formExM=document.getElementById("expmonth");
+let formExY=document.getElementById("expyear");
+let formCvv=document.getElementById("cvv");
+let sub=document.getElementById("sub");
+
+let Btn=document.getElementsByClassName(".confirmPay");
+Btn.addEventListener("click",(e)=>{
+    e.preventDefault();
+    if(formName.value || formEmail.value || formAdd.value || formCity.value || formState.value || formZip.value || formCard.value  || formCC.value || formExM.value || formExY.value || formCvv.value){
+        alert("Please Enter Crediantial");
+    }
+    else{
+        alert("Order Confirm")
+        sub.setAttribute("href","./index.html")
+    }
+})
