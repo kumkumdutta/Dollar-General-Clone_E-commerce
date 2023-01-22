@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
     <link rel="shortcut icon" href="../favicon/AD.jpg">
-    <link rel="stylesheet" type="text/css" href="../style/cart.css">
+    <title>Deals</title>
+    <link rel="stylesheet" type="text/css" href="../style/deals.css">
     <script src="https://kit.fontawesome.com/0244637c96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </head>
 <body>
-    
+
     <nav id="nav1">
         <div>
 
@@ -35,34 +37,83 @@
 
             <a href="signin.html"> <i class="fa-regular fa-circle-user"></i> Sign in</a>
 
+            <a href="Signup.html"> <i class="fa-solid fa-user-tie"></i> Admin </a>
+
         </div>
-
-
 
     </nav>
 
-
-    <div id="container">
-        <h2>Your Cart is empty!!</h2>
-        <p>Items added to your cart will appear here</p>
-        <a href="index.html"><button>START SHOPPING</button></a>
-
+    <div id="top">
+        <p><a href="index.html">Apni Dukan </a> / Deals</p>
+        <h6>Deals</h6>
     </div>
 
-    <div id="outer">
-        <p>Expecting to see items in your cart?</p>
-        <a href="signin.html">Sign in</a>
+    <div id="coupons">
+        <img src="../favicon/coupon1.png" alt="coupon">
+        <p>Coupons</p>
+    </div>
+
+    <div class="carousel" data-flickity='{ "groupCells": true }'>
+        <div class="carousel-cell">
+            <img src="https://cdn.cpnscdn.com/static.coupons.com/ext/bussys/cpa/pod/31/991/3331991_97b6b7d0-582f-4878-9dac-394552a764c7_high.jpg" alt="">
+            <p>Apni Dukan</p>
+            <h3>Save ₹5.00</h3>
+            <p>on your purchase of Rs.25 of more (pre-tax) at Apni Dukan</p>
+            <p>Exp:28/10/2023</p>
+            <p>AD Store</p>
+        </div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+      </div>
+
+    <div id="rewards">
+        <img src="../favicon/rewards.png" alt="rewards">
+        <p>Rewards</p>
     </div>
 
 
 
+    <div id="currentAds">
+
+    <img src="../favicon/weekly.png" alt="icon">      <p>Current Ads</p>
+        <div id="firstAd">
+            <div id="image">
+                <img src="https://f.wishabi.net/sub_pages/thumbnail/ebe34546-9142-11ed-96e3-0e7faade0358/thumbnail_image_400h_s3_key" alt="pic">
+            </div>
+            <div id="detail1">
+                <h3>Weekly Ad</h3>
+                <p>Prices good January 20-27</p>
+                <button>View Ad</button>
+            </div>
+            <div id="time1">
+                <h2>6</h2>
+                <p>Days left to save</p>
+            </div>
+        </div>
 
 
+        <div id="firstAd">
+            <img src="https://f.wishabi.net/sub_pages/thumbnail/967ca484-9125-11ed-9579-0e1ba86a8db4/thumbnail_image_400h_s3_key" alt="pic">
+            <div id="detail1">
+                <h3>Weekly Wireless Specials</h3>
+                <p>Prices good January 20-25</p>
+                <button>View Ad</button>
+            </div>
+            <div id="time1">
+                <h2>3</h2>
+                <p>Days left to save</p>
+            </div>
+        </div>
 
-
-
-
-
+    </div>
 
 
 
@@ -169,8 +220,7 @@
 
     </div>
 
-  
+
     
 </body>
-
 </html>

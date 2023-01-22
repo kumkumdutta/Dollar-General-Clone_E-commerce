@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav1{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+
+}
+#nav1>div{
+    display: flex;
+    margin: auto;
+    height: 70px;
+    align-content: center;
+    background-color: #FEF200;
+    justify-content: space-evenly;
+    font-size: 18px;
+    align-items: center;
+    padding: 7px;
+}
+#nav1 a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: none;
+}
+#nav1 img{
+    width: 150px;
+    height: 140px;
+}
+#search{
+    border-radius: 3px;
+    width: 450px;
+    height: 40px;
+    padding-left: 20px;
+
+}
+#searchIcon{
+    margin-left: -65px;
+}
+
+
+#top{
+    border: 1px solid lightgray;
+    width: 1400px;
+    height: 100px;
+    margin-left: 40px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+h6{
+
+    font-size: 30px;
+    text-decoration: none;
+}
+#coupons{
+    margin-left: 100px;
+}
+
+#coupons>img{
+    max-width:40px;
+    max-height: 40px;
+}
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+  width: 80%;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: flex;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
+#rewards{
+    margin-left: 100px;
+}
+#rewards>img{
+    max-width:40px;
+    max-height: 40px;
+}
+
+
+
+
+/* 
+#currentAds>div{
+    display: flex;
+} */
+#currentAds{
+    margin-left: 100px;
+}
+#currentAds>img{
+    max-width:40px;
+    max-height: 40px;
+}
+
+#firstAd{
+    display: flex;
+    border:1px solid lightgray;
+    justify-content: center;
+
+    margin-bottom: 40px;
+    height: 436px;
+    width: 1261px;
+
+}
+#firstAd:hover{
+    border: 3px solid lightgray;
+}
+
+#firstAd>img{
+    height: 400px;
+    width: 258px;
+    margin-top: 15px;
+}
+
+#firstAd>img:hover{
+    border: 2px solid lightgray;
+}
+
+/* #firstAd #image{
+    border: solid green;
+} */
+
+#detail1{
+
+    justify-content: center;
+    text-justify: center;
+    padding-top: 180px;
+    line-height: 20px;
+    margin-left: 20px;
+    
+}
+button{
+    background: black;
+    color: white;
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+}
+#time1{
+    display: flex;
+    margin-left: 25px;
+    background: lightgray;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 100px;
+    height: 80px;
+}
+h2{
+    font-size: 40px;
+}
+
+
+
+#footer{
+    display: flex;
+    margin: auto;
+    background-color: #000;
+}
+
+#footer>#dx{
+    width: 20%;
+    color: white;
+    padding-top: 20px;
+    padding-left: 150px;
+    text-align: left;
+    line-height: 40px;
+    
+    
+}
+#footer h3{
+    font-size: 17px;
+    font-family: 'Explora', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+#footer p{
+    font-size: 13px;
+    font-family: 'Explora', cursive;
+    font-family: 'Handlee', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+#img{
+    display: flex;
+    margin: auto;
+    width: 150px;
+    height: 90px;
+    
+}
+#logo{
+    background-color: black;
+    padding-top: 60px;
+}
+
+
+
+#logo>a>img{
+    display: flex;
+    margin: auto;
+    width: 121px;
+    height: 40px;
+    
+}
+
+#social_media{
+    display: flex;
+    margin: auto;
+   width: 10%;
+   justify-content: space-between;
+   margin-top: 10px;
+   font-size: 20px;
+   color: #FEF200;
+   margin-top: 60px;
+}
+#inf{
+    display: flex;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    padding-left: 80px;
+    color: #FEF200;
+   margin-top: 30px;
+
+   
+}
+#Akshay{
+    display: flex;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    /* padding-left: 10px; */
+    color: #FEF200;
+   margin-top: 30px;
+   padding-bottom: 30px;
+
+   }

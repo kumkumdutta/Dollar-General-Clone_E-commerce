@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav1{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+
+}
+#nav1>div{
+    display: flex;
+    margin: auto;
+    height: 70px;
+    align-content: center;
+    background-color: #FEF200;
+    justify-content: space-evenly;
+    font-size: 18px;
+    align-items: center;
+    padding: 7px;
+}
+#nav1 a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: none;
+}
+#nav1 img{
+    width: 150px;
+    height: 140px;
+}
+#search{
+    border-radius: 3px;
+    width: 450px;
+    height: 40px;
+    padding-left: 20px;
+
+}
+#searchIcon{
+    margin-left: -65px;
+}
+
+#block1{
+    height:192px;
+    width: 1140px;
+    border:1px solid lightgray;
+    text-align: left;
+    justify-content: center;
+    margin-left:190px;
+    
+    /* line-height: 24px; */
+}
+#block1 p{
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 10px;
+
+
+}
+#block1 h6{
+    font-size: 30px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#mid img{
+    height: 90px;
+    width: 970px;
+    text-align: center;
+    vertical-align: bottom;
+    padding-left: 140px;
+}
+
+#block2{
+    height: 680px;
+    width: 1108px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 100px;
+    margin-left: 200px;
+    line-height: 40px;
+}
+#block2 p{
+    font-size: 20px;
+}
+
+ #zip{
+    font-size: 20px;
+    padding-left: 20px;
+    height: 50px;
+    width: 400px;
+    border-radius: 25px;
+    border: 1px solid gray;
+} 
+ 
+button{
+    background: yellow;
+    height: 40px;
+    width: 100px;
+    border-radius: 25px;
+    position: absolute;
+    margin-left: -110px;
+    margin-top: 5px;
+    z-index: 2;
+    font-size: 14px;
+    font-weight: bold;
+    /* color: white; */
+    border: none;
+    cursor: pointer;
+    transform: translateX(2px);
+} 
+button:hover{
+    background: lightgreen;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+#footer{
+    display: flex;
+    margin: auto;
+    background-color: #000;
+}
+
+#footer>#dx{
+    width: 20%;
+    color: white;
+    padding-top: 20px;
+    padding-left: 150px;
+    text-align: left;
+    line-height: 40px;
+    
+    
+}
+#footer h3{
+    font-size: 17px;
+    font-family: 'Explora', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+#footer p{
+    font-size: 13px;
+    font-family: 'Explora', cursive;
+    font-family: 'Handlee', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+#img{
+    display: flex;
+    margin: auto;
+    width: 150px;
+    height: 90px;
+    
+}
+#logo{
+    background-color: black;
+    padding-top: 60px;
+}
+
+
+
+#logo>a>img{
+    display: flex;
+    margin: auto;
+    width: 121px;
+    height: 40px;
+    
+}
+
+#social_media{
+    display: flex;
+    margin: auto;
+   width: 10%;
+   justify-content: space-between;
+   margin-top: 10px;
+   font-size: 20px;
+   color: #FEF200;
+   margin-top: 60px;
+}
+#inf{
+    display: flex;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    padding-left: 80px;
+    color: #FEF200;
+   margin-top: 30px;
+
+   
+}
+#Akshay{
+    display: flex;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    /* padding-left: 10px; */
+    color: #FEF200;
+   margin-top: 30px;
+   padding-bottom: 30px;
+
+   }
