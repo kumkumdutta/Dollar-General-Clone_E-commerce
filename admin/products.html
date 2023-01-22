@@ -178,9 +178,13 @@ body{
         let proPrice=productPrice.value;
 
         let userObj={
-            name:proName,
+            
             img:proImg,
-            price:proPrice
+            title:proName,
+            reviews:"12",
+            rupees:proPrice,
+            description:"xyz",
+            avail:"3"
         }
         addProduct(userObj)
     })
@@ -188,7 +192,7 @@ body{
     
 
     function addProduct(userObj){
-        fetch("https://mocki.io/v1/200656c1-7141-45bf-9a68-c54e88a875f3",{
+        fetch("https://639c1ac842e3ad6927272409.mockapi.io/food",{
             method:"POST",
             headers:{
                 'Content-Type':'application/json'

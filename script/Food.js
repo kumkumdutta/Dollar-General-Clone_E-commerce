@@ -41,7 +41,7 @@ imagediv.addEventListener("click",function(){
 
        cont.innerHTML=null
     console.log(title.innerText)
-    fetch("https://mocki.io/v1/255100d7-b3b6-448c-9fa6-624443e8c484")
+    fetch("https://639c1ac842e3ad6927272409.mockapi.io/food")
     .then((res)=>{
         return res.json();
     })
@@ -72,7 +72,7 @@ rendercard(filtered)
 let cont = document.getElementById("container");
 
 
-fetch("https://mocki.io/v1/1df01d70-b50d-42c3-820b-171e61bceb3e")
+fetch("https://639c1ac842e3ad6927272409.mockapi.io/food?page=1&limit=12")
 .then((res)=>{
     return res.json()
 })
