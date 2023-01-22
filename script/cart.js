@@ -169,7 +169,10 @@ let cartPro=document.getElementById("check")
 
 
     document.querySelector("#continue").addEventListener("click",function(){
+        
         document.querySelector(".popup").classList.add("active");
+        window.location.href
+        
     })
 
     document.querySelector(".btn").addEventListener("click",function(){
