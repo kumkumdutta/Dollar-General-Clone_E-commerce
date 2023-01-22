@@ -27,7 +27,7 @@
     }
 
     #logo-name {
-       border: green solid;
+       
         align-items: center;
         width: 20%;
         height: 100%;
@@ -45,6 +45,7 @@
         width: 300px;
         height: 150px;
         padding-bottom: 30px;
+        margin-bottom: 20px;
     }
 
 
@@ -189,10 +190,10 @@
         signup()
 
     })
-let data = JSON.parse(localStorage.getItem("userdetails"));
-if(data==null){
-    data=[];
-}
+let data = JSON.parse(localStorage.getItem("userdetails")) || []
+// if(data==null){
+//     data=[];
+// }
     function signup() {
         let fullname = document.querySelector(".full-name").value
         let email = document.querySelector(".email").value
