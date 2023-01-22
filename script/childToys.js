@@ -54,9 +54,9 @@ function display(data){
 		
 		let img= document.createElement("img")
 		img.setAttribute("src",el.image)
-		// let image_div=document.createElement("div")
-		// image_div.setAttribute("id","div_img")
-		// image_div.append(img)
+		let image_div=document.createElement("div")
+		image_div.setAttribute("id","div_img")
+		image_div.append(img)
 		let name= document.createElement("h3");
          name.textContent=el.name.substr(0,20)+"...";
 		 let price =document.createElement("p")
@@ -80,7 +80,7 @@ function display(data){
 						localStorage.setItem("cartitem",JSON.stringify(cart))
 				  }
 		  })
-		div.append(img,name,price,btn)
+		div.append(image_div,name,price,btn)
 		document.querySelector("#cont").append(div)
 
 		// localStorage.setItem("itemsofchild",JSON.stringify())
