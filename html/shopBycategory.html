@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="/style/shopByCategory.css">
+	<link rel="stylesheet" href="../style/shopByCategory.css">
 	<link rel="shortcut icon" href="../favicon/AD.jpg">
 	<script src="https://kit.fontawesome.com/0244637c96.js" crossorigin="anonymous"></script>
 </head>
@@ -24,8 +24,8 @@
 
             <a href="">Careers</a>
 
-            <input id="search" type="text" placeholder="Search for a product">
-            <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+            <input id="search" type="text" placeholder="Search for a product" oninput="search()">
+            <i id="searchIcon" class="fa-solid fa-magnifying-glass" ></i>
 
 
 
@@ -48,6 +48,11 @@
 		<div ></div>
 		<h1 id="toys">0-24 Months</h1>
 	</div>
+	<select name="price" id="filter" onchange="filterfun()">
+		<option value="">Filter</option>
+		<option value="LTH"> Price Low To High</option>
+		<option value="HTL">Price High To Low</option>
+	</select>
 	<div id="cont">
 
 	</div>

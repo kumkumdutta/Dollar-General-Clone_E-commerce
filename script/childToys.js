@@ -29,22 +29,21 @@ fetch(toys)
 function filterfun(){
 	let sorted = document.querySelector("#filter")
 	console.log("srabh")
-	if(sorted.value=="LTH"){
-		storeData.sort((a,b)=>{
-			return a.price - b.price
+	 if(sorted.value==="LTH"){
+		 storeData.sort((a,b)=>{
+			return (a.price - b.price)
+
 		}) 
-		}if(sorted.value=="HTL"){
-		storeData.sort((a,b)=>{
-			return b.price - a.price
+		}if(sorted.value==="HTL"){
+		   storeData.sort((a,b)=>{
+			return (b.price - a.price)
 		})
 		}
+		console.log(storeData)
 		display(storeData)
-		// window.location.reload()
+		
    }
-console.log(storeData)
-	// })
 
-// console.log(data)
 
 
 function display(data){
@@ -61,9 +60,26 @@ function display(data){
 		let name= document.createElement("h3");
          name.textContent=el.name.substr(0,20)+"...";
 		 let price =document.createElement("p")
-		 price.textContent=el.price
+		 price.textContent= "₹"+el.price
 		 let btn= document.createElement("button")
 		 btn.textContent="Add To Cart"
+		 btn.addEventListener("click",function(){
+			let cart= JSON.parse(localStorage.getItem("cartitem"))||[];
+			let ald = false;
+				for(let i=0; i<cart.length; i++){
+				  if(cart[i].name==el.name){
+					ald=true
+					break;
+				  }
+				} if(ald===true){
+					alert("Your Product is already in Cart")
+				  }
+				  else{
+					cart.push({...el,qty:1})
+					alert("Your Product is added in Cart")
+						localStorage.setItem("cartitem",JSON.stringify(cart))
+				  }
+		  })
 		div.append(img,name,price,btn)
 		document.querySelector("#cont").append(div)
 

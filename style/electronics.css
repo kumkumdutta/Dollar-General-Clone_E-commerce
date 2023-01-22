@@ -168,14 +168,17 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 button{
-    font-size: 15px;
-    border: 1px solid rgb(0, 0, 0);
-    display: block;
-    border-radius: 6px;
-    margin: auto;
-    width: 120px;
-    height: 40px;
-    cursor: pointer;
+  display: block;
+  margin: auto;
+  background-color: #FEF200;
+  border-radius: 3px;
+  border: 1px black solid;
+  width:150px;
+  height: 40px;
+  margin-top: 10px;
+}
+button:hover{
+  background-color: lightgreen;
 }
 #container img{
     width: 100%;

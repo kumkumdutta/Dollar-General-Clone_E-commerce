@@ -82,6 +82,7 @@ fetch("https://mocki.io/v1/1df01d70-b50d-42c3-820b-171e61bceb3e")
 })
 
 function rendercard(data){
+    cont.innerHTML=""
     data.forEach((element)=>{
      let card = document.createElement("div");
      card.classList.add("father");
@@ -123,12 +124,12 @@ break;
 };
 }
 if(alreadyaddedinfavourites === true){
-alert("item already in cart")
+alert(" Your Item is Already in Cart")
 }else{
 
 favouriteData.push({...element,});
 localStorage.setItem("cartitem",JSON.stringify(favouriteData));
-alert("Item Added To Favourites") 
+alert("Item Added to cart🛍️") 
 }
     }
   )
@@ -173,3 +174,31 @@ rendercard(filtered)
     })
     
 })
+
+let filter = document.getElementById("filtervalue")
+
+filter.addEventListener("change",function(){
+    cont.innerHTML=null
+    if(filter.value=="High To Low"){
+        
+          let filtereddata = fooddata.sort(function(a, b){return b.rupees - a.rupees})
+          console.log(filtereddata)
+          rendercard(filtereddata)
+        
+    }else if(filter.value=="Low To High"){
+        
+          let filtereddata1 = fooddata.sort(function(a, b){return a.rupees - b.rupees})
+          rendercard(filtereddata1)
+        
+    }
+})
+function search(){
+    // event.preventDefault()
+    
+        let searched =document.querySelector("#search").value;
+       
+         let searchedData= fooddata.filter(function(el){
+             return el.title.toLowerCase().includes(searched.toLowerCase())
+         })
+       rendercard(searchedData)
+       }
