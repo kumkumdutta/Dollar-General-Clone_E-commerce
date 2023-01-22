@@ -2,7 +2,7 @@
 
 
 //electronics
- #GET https://mocki.io/v1/0a8e2cbc-e596-4fe5-b756-29cc94cfe284
+ GET https://mocki.io/v1/0a8e2cbc-e596-4fe5-b756-29cc94cfe284
 
 //beauty
 GET https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073

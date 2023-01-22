@@ -2,13 +2,13 @@
     let container=document.getElementById("container")
     let count=document.getElementById("count");
     let filter=document.getElementById("filterSelect");
-    let promise=fetch("https://mocki.io/v1/200656c1-7141-45bf-9a68-c54e88a875f3")
+    let promise=fetch("https://639c1ac842e3ad6927272409.mockapi.io/electronics")
     .then((res)=>{
         return res.json();
     })
     .then((res)=>{
-        console.log(res.electronics)
-        display(res.electronics)
+        console.log(res)
+        display(res)
     })
     function display(data){
         container.innerHTML="";
@@ -33,10 +33,25 @@
             button.innerText="Add To Cart"
 
             button.addEventListener("click",()=>{
-                alert("Item Added to cart🛍️")
-                cart_data.push(element);
-                console.log("Add To catttt")
-                localStorage.setItem("cartitem",JSON.stringify(cart_data));
+
+                let favouriteData = JSON.parse(localStorage.getItem("cartitem"));
+                if(favouriteData===null) favouriteData = [];
+                 
+                  let alreadyaddedinfavourites = false;
+                    for(let i=0; i<favouriteData.length; i++){
+                    if(favouriteData[i].id === element.id){
+                    alreadyaddedinfavourites = true;
+                    break;
+                    };
+                    }
+                    if(alreadyaddedinfavourites === true){
+                    alert(" Your Item is Already in Cart")
+                    }else{
+                    
+                    favouriteData.push({...element,});
+                    localStorage.setItem("cartitem",JSON.stringify(favouriteData));
+                    alert("Item Added to cart🛍️") 
+                    }
             })
         
 
@@ -60,5 +75,6 @@
             container.append(box)
         });
     }
+    
 
     
