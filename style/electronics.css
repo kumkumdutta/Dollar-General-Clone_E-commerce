@@ -52,7 +52,13 @@
 #searchIcon{
     margin-left: -65px;
 }
-
+.imgdabba{
+  height: 300px;
+}
+.imgdabba img{
+  height: 100%;
+  width: 80%;
+}
 
 
 

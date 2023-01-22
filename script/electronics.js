@@ -15,9 +15,11 @@
         data.forEach((element) => {
             let box=document.createElement("div");
             let imgDiv=document.createElement("div");
+            imgDiv.setAttribute("class","imgdabba")
             let image=document.createElement("img");
             image.setAttribute("src",element.img);
-            imgDiv.append(image)
+            imgDiv.append(image);
+
 
             let title=document.createElement("h3");
             title.innerText=element.title.substr(0,20)+"...";
@@ -57,14 +59,29 @@
 
             filter.addEventListener("change",()=>{
                 
-                if(filter.value=="Low To High"){
-                    data.sort((a,b)=>a.rupees-b.rupees)
-                    display(data);
-                }
+                container.innerHTML=null
                 if(filter.value=="High To Low"){
-                    data.sort((a,b)=>b.rupees-a.rupees)
-                    display(data);
+                    
+                    let filtereddata = data.sort(function(a, b){return b.rupees - a.rupees})
+                    console.log(filtereddata)
+                    display(filtereddata)
+                    
+                }else if(filter.value=="Low To High"){
+                    
+                    let filtereddata1 = data.sort(function(a, b){return a.rupees - b.rupees})
+                    display(filtereddata1)
+                    
                 }
+
+
+                // if(filter.value=="Low To High"){
+                //     data.sort((a,b)=>a.rupees-b.rupees)
+                //     display(data);
+                // }
+                // if(filter.value=="High To Low"){
+                //     data.sort((a,b)=>b.rupees-a.rupees)
+                //     display(data);
+                // }
                 // display(data);
                 
             }) 
