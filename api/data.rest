@@ -1,8 +1,8 @@
 //food and beverage
-
+https://639c1ac842e3ad6927272409.mockapi.io/food
 
 //electronics
- GET https://mocki.io/v1/0a8e2cbc-e596-4fe5-b756-29cc94cfe284
+ GET https://639c1ac842e3ad6927272409.mockapi.io/electronics
 
 //beauty
 GET https://mocki.io/v1/4def05dd-55bf-4304-807f-bf4a0d991073
