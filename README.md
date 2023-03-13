@@ -10,4 +10,4 @@ project - 1.home(created by Akshay Kumar Gaurav)
           8.Admin(Created by Mrunali Bind)
           
 functionalities - 1. Searching , Sorting, Filter.
-link:-[https://darling-druid-78ef30.netlify.app/index.html]
+link:-[https://gentle-twilight-b8683d.netlify.app/]
